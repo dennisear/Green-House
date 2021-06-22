@@ -1,0 +1,16 @@
+.menuPYA{
+    background: #C4C4C4;
+    border:2px solid #A7AA0B;
+}
+.menuPYA li {
+    display: inline-block;
+    max-width: 154.5px;
+    width: 100%;
+    line-height:45px;
+    text-align: center;
+    border-right:2px solid #A7AA0B;
+
+}
+.menuPYA li:hover{
+    background: #A9D18E;
+} 

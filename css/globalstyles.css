@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+}
+.header{
+    background: #856154;
+}
+.menu{
+    background: #C4C4C4;
+}
+.menu li {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+    line-height:45px;
+    text-align: center;
+    border-right:2px solid #A7AA0B;
+}
+.menu li:hover{
+    background: #A9D18E;
+} 
+.pH{
+    background-image: url(/images/fondohome3.jpg);
+    height: 100vh;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 140px;
+    height: 105px;
+}
+.socialmedia img{
+    width: 60px;
+    height: 60px;
+    padding-top: 20%;
+}
