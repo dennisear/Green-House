@@ -2,11 +2,27 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: "Edmondsans";
+    src: url("../../src/utils/fonts/EdmondsansRegular.ttf");
+
+    font-family: "Sunny";
+    src: url("../../src/utils/fonts/SunnyWeather.otf")
+
+}
+  
+
+
+
+
+
 .header{
     background: #856154;
 }
 .menu{
     background: #C4C4C4;
+    border:2px solid #A7AA0B;
+    font-family: "Edmondsans";
 }
 .menu li {
     display: inline-block;
@@ -22,11 +38,20 @@
 .pH{
     height: 100vh;
     width:100%;
+    background: url("../../src/utils/images/home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: right;
 }
+.pH p{
+    color: white;
+    font-size: 35px;
+    font-family: "Sunny";
+}
+
+
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -39,4 +64,15 @@
     width: 60px;
     height: 60px;
     padding-top: 20%;
+}
+
+
+.banner{
+    height: 120px;
+    width:100%;
+    background: url("../../src/utils/images/bannerAS.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid white;
 }
