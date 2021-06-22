@@ -1,6 +1,7 @@
 *{
     margin: 0px;
 }
+
 .header{
     background: #856154;
 }
@@ -19,7 +20,6 @@
     background: #A9D18E;
 } 
 .pH{
-    background-image: url(/images/fondohome3.jpg);
     height: 100vh;
     width:100%;
     background-position: center;
