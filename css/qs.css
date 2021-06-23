@@ -1,0 +1,17 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+}
+.banner img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+.banner1{
+    background-color: #A9D18E;
+    padding: 5%;
+}
+.integrantes{
+    border-spacing: 3em .0em;
+    margin: 5%;
+}
