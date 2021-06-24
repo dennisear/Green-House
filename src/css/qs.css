@@ -1,4 +1,24 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+}
 .integrantes{
-    border-spacing: 3em .0em;
-    margin: 5%;
+    border-spacing: 5em .0em;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.integrantes img{
+    border: 10px solid #548235;
+    background-color: black ;
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    padding: 5%;
+}
+p{
+    background-color: white;
+    border: 8px solid #548235;
+    padding: 1px;
+    text-align: justify;
 }
