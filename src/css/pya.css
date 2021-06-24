@@ -10,27 +10,16 @@
     line-height:45px;
     text-align: center;
     border-right:2px solid #A7AA0B;
-
 }
 .menuPYA li:hover{
     background: #A9D18E;
 } 
-
-
-
-
-
-
-
-
-
 
 .main-container{
     width: 100%;
     text-align: center;
     font-family: "Edmondsans";
 }
-
 .btn-item{
     background: #A9D18E;
     display:block;
@@ -62,3 +51,43 @@
 }
 
 
+.boxes{
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.boxes img{
+    width: 150px;
+    height: 150px;
+}
+.prev, .next {  /*Botones de anterior y siguiente*/
+  cursor: pointer;
+  color: #A9D18E;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev:hover, .next:hover { /* Al pasar el mouse, agrega un color de fondo */ 
+  background-color: #A9D18E;
+  color: aliceblue;
+}
+
+
+.buttonPA{
+    width: 150px;
+    color: #548235;
+    font-size: 15px;
+    padding: 0.5em 1.2em;
+
+    border: 2px solid;
+    border-color: #548235;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .buttonPA:hover {
+    background: #548235;
+    color: aliceblue;
+  }

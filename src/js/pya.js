@@ -1,4 +1,7 @@
-//------------------------------------FUNCIONES PARA MOSTRAR Y OCULTAR EL CONTENIDO ------------------------------------
+//------------------------------------ACORDEÓN------------------------------------
+
+
+//-------Mostrar y ocultar el contenido-------
 
 let btnItems = document.querySelectorAll(".item .btn-item") //Seleccionar elementos del acordeón
 
@@ -25,7 +28,7 @@ for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que s
     //    })
 }
 
-//------------------------------------FUNCIÓN PARA MOSTRAR Y OCULTAR EL CONTENIDO DE UN ELEMENTO A LA VEZ------------------------------------
+//-------Mostrar y ocultar el contenido de uno a la vez-------
 function removeClase() {
 
     for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que se abra el acordeón
@@ -33,6 +36,27 @@ function removeClase() {
     }
 }
 
-//------------------------------------FUNCIÓN PARA MOSTRAR Y OCULTAR EL CONTENIDO DE UN ELEMENTO A LA VEZ------------------------------------
 
 
+
+//------------------------------------SLIDER------------------------------------
+
+let slideIndex = 1;
+showSlides(slideIndex); //Muestra slider 1
+
+
+function plusSlides(n) { // Controles anterior/Siguiente
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slides[slideIndex-1].style.display = "block"; 
+}
