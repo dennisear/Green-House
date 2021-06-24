@@ -16,15 +16,7 @@
     background: #A9D18E;
 } 
 
-.banner{
-    height: 120px;
-    width:100%;
-    background: url("../../src/utils/images/bannerAS.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 10px solid white;
-}
+
 
 
 
@@ -68,3 +60,5 @@
     content: '\02212';
     float: right;
 }
+
+
