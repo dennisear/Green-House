@@ -1,197 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green House</title>
-  <link rel="stylesheet" type="text/css" href="../../src/css/globalstyles.css">
-  <link rel="stylesheet" type="text/css" href="../../src/css/pya.css">
-  <script src="../../src/js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green House</title>
+    <link rel="stylesheet" type="text/css" href="../../src/css/globalstyles.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/pya.css">
+    <script src="../../src/js/index.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
-      <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img
-          src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
-    </header>
-    <nav class="menu">
-      <ul>
-        <li onclick="changeIndex()"> INICIO</li>
-        <li onclick="changePlantas()"> PLANTAS</li>
-        <li onclick="changeArboles()"> ÁRBOLES</li>
-        <li onclick="changeAsesorias()"> ASESORÍAS</li>
-        <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
-      </ul>
-    </nav>
-    <nav class="menuPYA">
-      <ul>
-        <!--BOTONES NO FUNCIONALES AÚN-->
-        <li> Pinos</li>
-        <li> Palmas</li>
-        <li> Nativos</li>
-        <li> Introducidos</li>
-      </ul>
-    </nav>
+    <div class="container">
+        <header class="header">
+            <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
+            <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img
+                    src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li onclick="changeIndex()"> INICIO</li>
+                <li onclick="changePlantas()"> PLANTAS</li>
+                <li onclick="changeArboles()"> ÁRBOLES</li>
+                <li onclick="changeAsesorias()"> ASESORÍAS</li>
+                <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
+            </ul>
+        </nav>
+        <nav class="menuPYA">
+            <ul>
+                <!--BOTONES NO FUNCIONALES AÚN-->
+                <li> Pinos</li>
+                <li> Palmas</li>
+                <li> Nativos</li>
+                <li> Introducidos</li>
+            </ul>
+        </nav>
 
-    <div class="banner"></div>
+        <div class="banner"></div>
 
-    <div class="main-container">
-      <div class="list-container">
+        <div class="main-container">
+            <div class="list-container">
 
-        <div class="item"> <!----------------PRIMERA OPCIÓN DEL ACORDEÓN---------------->
-          <p class="btn-item">PINOS</p> 
-          <div class="item-content" id="pinos">
-            <div class="slideshow-container">
-              <div class="mySlides"> <!--Primera diapositiva (primera opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal1">Pino 1</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal2">Pino 2</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal3">Pino 3</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal4">Pino 4</button></div>
+                <div class="item">
+                    <!----------------PRIMERA OPCIÓN DEL ACORDEÓN---------------->
+                    <p class="btn-item">PINOS</p>
+                    <div class="item-content" id="pinos">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <!--Primera diapositiva (primera opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal1">Pino 1</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal2">Pino 2</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal3">Pino 3</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal4">Pino 4</button></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <!--Segunda diapositiva (primera opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal5">Pino 5</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal6">Pino 6</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal7">Pino 7</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal8">Pino 8</button></div>
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Botón de siguiente-->
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="mySlides"> <!--Segunda diapositiva (primera opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal5">Pino 5</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal6">Pino 6</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal7">Pino 7</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal8">Pino 8</button></div>
+
+                <div class="item">
+                    <!----------------SEGUNDA OPCIÓN DEL ACORDEÓN---------------->
+                    <p class="btn-item">PALMAS</p>
+                    <div class="item-content" id="palmas">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <!--Primera diapositiva (segunda opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal9">Palma 1</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal10">Palma 2</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal11">Palma 3</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal12">Palma 4</button></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <!--Segunda diapositiva (segunda opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal13">Palma 5</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal14">Palma 6</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal15">Palma 7</button></div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal16">Palma 8</button></div>
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Botón de siguiente-->
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Botón de siguiente-->
+
+                <div class="item">
+                    <!----------------TERCERA OPCIÓN DEL ACORDEÓN---------------->
+                    <p class="btn-item">NATIVOS</p>
+                    <div class="item-content" id="nativos">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <!--Primera diapositiva (tercera opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal17">Nativos 1</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal18">Nativos 2</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal19">Nativos 3</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal20">Nativos 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <!--Segunda diapositiva (tercera opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal21">Nativos 5</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal22">Nativos 6</button>
+                                    </div> 
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal23">Nativos 7</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal24">Nativos 8</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Botón de siguiente-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!----------------CUARTA OPCIÓN DEL ACORDEÓN---------------->
+                    <p class="btn-item">INTRODUCIDOS</p>
+                    <div class="item-content" id="nativos">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <!--Primera diapositiva (cuarta opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal25">Introducido 1</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal26">Introducido 2</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal27">Introducido 3</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal28">Introducido 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <!--Segunda diapositiva (cuarta opción del acordeón)-->
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal29">Introducido 5</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal30">Introducido 6</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal31">Introducido 7</button>
+                                    </div>
+                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal32">Introducido 8</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Botón de siguiente-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal1">
+                    <div class="modal-dialog">
+                        <header class="modal-header">
+                            MODAL 1
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </header>
+                        <section class="modal-content">
+                            <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit
+                                accusamus totam ratione! Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem
+                                ab perspiciatis qui. Facere, dignissimos. Nemo, ea.</p>
+                        </section>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-
-        <div class="item"> <!----------------SEGUNDA OPCIÓN DEL ACORDEÓN---------------->
-          <p class="btn-item">PALMAS</p> 
-          <div class="item-content" id="palmas">
-            <div class="slideshow-container">
-              <div class="mySlides"> <!--Primera diapositiva (segunda opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal9">Palma 1</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal10">Palma 2</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal11">Palma 3</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal12">Palma 4</button></div>
-                </div>
-              </div>
-              <div class="mySlides"> <!--Segunda diapositiva (segunda opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal13">Palma 5</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal14">Palma 6</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal15">Palma 7</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal16">Palma 8</button></div>
-                </div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Botón de siguiente-->
-            </div>
-          </div>
-        </div>
-
-        <div class="item"> <!----------------TERCERA OPCIÓN DEL ACORDEÓN---------------->
-          <p class="btn-item">NATIVOS</p> 
-          <div class="item-content" id="nativos">
-            <div class="slideshow-container">
-              <div class="mySlides"> <!--Primera diapositiva (tercera opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal17">Nativos 1</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal18">Nativos 2</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal19">Nativos 3</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal20">Nativos 4</button></div>
-                </div>
-              </div>
-              <div class="mySlides"> <!--Segunda diapositiva (tercera opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal21">Nativos 5</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal22">Nativos 6</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal23">Nativos 7</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal24">Nativos 8</button></div>
-                </div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Botón de siguiente-->
-            </div>
-          </div>
-        </div>
-
-        <div class="item"> <!----------------CUARTA OPCIÓN DEL ACORDEÓN---------------->
-          <p class="btn-item">INTRODUCIDOS</p> 
-          <div class="item-content" id="nativos">
-            <div class="slideshow-container">
-              <div class="mySlides"> <!--Primera diapositiva (cuarta opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal25">Introducido 1</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal26">Introducido 2</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal27">Introducido 3</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal28">Introducido 4</button></div>
-                </div>
-              </div>
-              <div class="mySlides"> <!--Segunda diapositiva (cuarta opción del acordeón)-->
-                <div class="boxes">
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal29">Introducido 5</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal30">Introducido 6</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal31">Introducido 7</button></div>
-                  <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br /><button type="button" class="open-modal" data-open="modal32">Introducido 8</button></div>
-                </div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Botón de anterior -->
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Botón de siguiente-->
-            </div>
-          </div>
-        </div>
-        
-        <div class="modal" id="modal1">
-          <div class="modal-dialog">
-            <header class="modal-header">
-              MODAL 1
-              <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
-            </header>
-            <section class="modal-content">
-              <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.</p>
-            </section>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
     </div>
-  </div>
-  <script src="../../src/js/pya.js"></script>
+    <script src="../../src/js/pya.js"></script>
 </body>
 </html>

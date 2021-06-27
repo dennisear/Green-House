@@ -1,12 +1,14 @@
 //------------------------------------ACORDEÓN------------------------------------
 
+
+//-------Mostrar y ocultar el contenido-------
+
 let btnItems = document.querySelectorAll(".item .btn-item") //Seleccionar elementos del acordeón
 
 for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que se abra el acordeón
 
   btnItems[i].addEventListener("click", function (e) {
-
-  let btn = e.target; //Variable en la que se guarda el elemento en el que se hizo click
+    let btn = e.target; //Variable en la que se guarda el elemento en el que se hizo click
 
     if (btn.className == "btn-item active") { //Clase activa del boton
       removeClase() // Se oculta el contenido
@@ -19,9 +21,10 @@ for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que s
 
 function removeClase() { //Muestra una opción, oculta seleccionada con anterioridad
 
-    for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que se abra el acordeón
-        btnItems[i].classList.remove("active") //Se muestra el contenido
-    }
+  for (let i = 0; i < btnItems.length; i++) {  //Recorre los elementos, para que se abra el acordeón
+    btnItems[i].classList.remove("active") //Se muestra el contenido
+
+  }
 }
 
 
@@ -47,7 +50,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
 }
-
 
 //------------------------------------MODAL-----------------------------------
 
