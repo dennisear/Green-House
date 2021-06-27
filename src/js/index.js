@@ -42,3 +42,4 @@ function goToIg(){
 function goToYb(){
     location.href="https://www.youtube.com" //Función que dirige al usuario a la cuenta de youtube de green house
 }
+
