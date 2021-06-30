@@ -59,7 +59,7 @@ const isVisible = "is-visible";
 
 
 const obj = [{
-  key: "modal1", content: "modal1 content"
+  key: "modal1", content: "modal1 content", P="HOLI"
 }, {
   key: "modal2", content: "modal2 content"
 }, {
