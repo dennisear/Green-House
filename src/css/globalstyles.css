@@ -36,6 +36,7 @@
     border:2px solid #A7AA0B;  
 }
 .menu ul{
+    font-family: "Edmondsans";
     margin: 0;
     list-style: none;
     padding: 15px 20px;

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green House</title>
+    <title>Asesorías</title>
     <link rel="stylesheet" type="text/css" href="../../src/css/globalstyles.css">
     <link rel="stylesheet" type="text/css" href="../../src/css/asesorias.css">
+    <link rel="shortcut icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
     <script src="../../src/js/index.js"></script>
 </head>
 
@@ -16,15 +18,19 @@
             <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
             <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
         </header>
-        <nav class="menu">
-            <ul>
-                <li onclick="changeIndex()"> INICIO</li>
-                <li onclick="changePlantas()"> PLANTAS</li>
-                <li onclick="changeArboles()"> ÁRBOLES</li>
-                <li onclick="changeAsesorias()"> ASESORÍAS</li>
-                <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
-            </ul>
-        </nav>
+        <div class="headerMenu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"> <img src="../../src/utils/images/men.png" class="men"></img>  </label>
+            <nav class="menu">
+                <ul>
+                    <li onclick="changeIndex()"> INICIO</li>
+                    <li onclick="changePlantas()"> PLANTAS</li>
+                    <li onclick="changeArboles()"> ÁRBOLES</li>
+                    <li onclick="changeAsesorias()"> ASESORÍAS</li>
+                    <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
+                </ul>
+            </nav>
+        </div>
         <div class="banner"></div>
         <div class="main-container">
             <div class="list-container">
