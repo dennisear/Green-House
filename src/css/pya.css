@@ -1,18 +1,20 @@
+/* -------------- Submenu styles -------------- */
 .menuPYA{
-    background: #C4C4C4;
-    border:2px solid #A7AA0B;
-    font-family: "Edmondsans";
+  background: #C4C4C4;
+  border:2px solid #A7AA0B;
+  font-family: "Edmondsans";
 }
 .menuPYA li {
-    display: inline-block;
-    max-width: 152px;
-    width: 100%;
-    line-height:45px;
-    text-align: center;
-    border-right:2px solid #A7AA0B;
+  display: inline-block;
+  max-width: 150px;
+  font-size: 15.5px;
+  width: 100%;
+  line-height:45px;
+  text-align: center;
+  border-right:2px solid #A7AA0B;
 }
 .menuPYA li:hover{
-    background: #A9D18E;
+  background: #A9D18E;
 } 
 
 
@@ -41,7 +43,7 @@
   color: aliceblue;
 }
 
-  /* MODAL –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* -------------- MODALS -------------- */
   .open-modal {
     width: 150px;
     color: #548235;
@@ -111,3 +113,37 @@
   .modal p+p {
     margin-top: 1rem;
   } 
+
+
+
+/* -------- Responsive design -------- */
+/*Submenu on smartphones/tablets*/
+@media only screen and (max-width:768px){
+  .menuPYA{
+    display: none; /*I hide it because the submenu is not pretty if it is set to that small size*/
+  }
+} 
+@media only screen and (min-width:769px) and (max-width:830px){
+  .menuPYA li {
+    max-width: 89.3px;
+    font-size: 10px;
+  }
+} 
+@media only screen and (min-width:831px) and (max-width:940px){
+  .menuPYA li {
+    max-width: 93px;
+    font-size: 10px;
+  }
+} 
+@media only screen and (min-width:941px) and (max-width:1100px){
+  .menuPYA li {
+    max-width: 105.5px;
+    font-size: 12px;
+  }
+} 
+@media only screen and (min-width:1101px) and (max-width:1259px){
+  .menuPYA li {
+    max-width: 106px;
+    font-size: 12px;
+  }
+} 
