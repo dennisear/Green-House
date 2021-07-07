@@ -6,6 +6,7 @@ body, html{
 .objetivos{
     background-color: #A9D18E;
     text-align: center;
+    font-size: 120%;
     color: black;
     margin-top: 2%;
     padding-bottom: 4%;
@@ -13,6 +14,7 @@ body, html{
 }
 h2{
     padding-top: 5%;
+    padding-bottom: 2%;
 }
 .integrantes{
     border-spacing: 3em .0em;
@@ -21,16 +23,39 @@ h2{
     margin-bottom: 5%;
 }
 .integrantes img{
+    margin-top: 5%;
     border: 10px solid #548235;
     background-color: black ;
     border-radius: 50%;
     width: 50%;
     height: auto;
-    padding: 5%;
+    padding: 2%;
 }
 p{
     background-color: white;
     border: 8px solid #548235;
     padding: 5%;
     text-align: justify;
+    margin: 7%;
 }
+@media only screen and (min-width: 320px) and (max-width:440px){
+    .contenido{
+        font-size: 80%;
+        text-align: center;
+    }
+    .integrantes img{
+        border: 5px solid #548235;
+    }
+
+} 
+@media only screen and (min-width: 441px) and (max-width:600px){
+    .contenido{
+        font-size: 80%;
+        text-align: center;
+    }
+} 
+@media only screen and (min-width: 601px) and (max-width:800px){
+    .contenido{
+        font-size: 90%;
+    }
+} 
