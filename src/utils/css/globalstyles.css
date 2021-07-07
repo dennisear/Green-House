@@ -6,9 +6,9 @@
 /* -------------------- Fonts to use -------------------- */
 @font-face {
     font-family: "Edmondsans"; /*Font for paragraphs*/
-    src: url("../../src/utils/fonts/EdmondsansRegular.ttf");
+    src: url("../../utils/fonts/EdmondsansRegular.ttf");
     font-family: "Sunny"; /*Font for titles, subtitles and highlighting words */
-    src: url("../../src/utils/fonts/SunnyWeather.otf")
+    src: url("../../utils/fonts/SunnyWeather.otf")
 }
   
 
@@ -38,10 +38,8 @@
 .menu ul{
     font-family: "Edmondsans";
     margin: 0;
-    list-style: none;
     padding: 15px 20px;
     display: flex;
-    text-decoration: none; 
     justify-content: space-evenly;
 }
 .menu li:hover{
@@ -56,12 +54,16 @@
     height: 60px;
     padding-top: 20%;
 }
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
 
 
 /* -------------------- Home -------------------- */
 .pH{ /*Photo*/
     height: 100vh;
-    background: url("../../src/utils/images/home.png");
+    background: url("../../utils/images/home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +91,7 @@
 .banner{
     height: 120px;
     width:100%;
-    background: url("../../src/utils/images/bannerAS.png");
+    background: url("../../utils/images/bannerAS.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Plantas</title>
-		<link rel="stylesheet" type="text/css" href="../../src/css/globalstyles.css">
-        <link rel="stylesheet" type="text/css" href="../../src/css/pya.css">
+		<link rel="stylesheet" type="text/css" href="../../src/utils/css/globalstyles.css">
+        <link rel="stylesheet" type="text/css" href="../../src/utils/css/pya.css">
         <link rel="shortcut icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
-        <script src="../../src/js/index.js"></script>
+        <script src="../../src/utils/js/index.js"></script>
 	</head>
 	<body>
        <div class="container">
@@ -32,13 +32,11 @@
             <nav class="menuPYA">
                 <ul>
                     <li onclick="changeIndex()"> Plantas Anuales</li>
-                    <li onclick="changePlantas()"> Arómaticas</li>
                     <li onclick="changeArboles()"> Bromelias</li>
                     <li onclick="changeAsesorias()"> Bonsáis</li>
                     <li onclick="changeQS()"> Cáctus y suculentas</li>
                     <li onclick="changeIndex()"> Plantas helechos</li>
                     <li onclick="changePlantas()"> Plantas herbáceas</li>
-                    <li onclick="changeArboles()"> Orquídeas</li>
                 </ul>
             </nav>
             <div class="banner"></div>
@@ -52,18 +50,16 @@
                         <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 4</button></div>        
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal16">Afelandra</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal17">Begonia Big</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal18">Geranio</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal19">Kalachoe</button></div>       
                                 </div>
                             </div>
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 7</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 8</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta Anual 9</button></div>         
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal20">Novio</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal21">Nueva Guinea</button></div> 
                                 </div>
                             </div>
                             <!-- Botones de anterior y siguiente-->
@@ -72,79 +68,32 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="item">
-                    <p class="btn-item">AROMÁTICAS</p>
-                    <div class="item-content">
-                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 4</button></div>        
-                                </div>
-                            </div>
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Aromática 8</button></div>         
-                                </div>
-                            </div>
-                            <!-- Botones de anterior y siguiente-->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="item">
                     <p class="btn-item">BROMELIAS</p>
                     <div class="item-content">
-                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 4</button></div>        
-                                </div>
-                            </div>
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bromelia 8</button></div>         
-                                </div>
-                            </div>
-                            <!-- Botones de anterior y siguiente-->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal22">Davine</button></div> 
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal23">Guzmania</button></div> 
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal24">Guzmania Jazz</button></div>         
                         </div>
                     </div>
                 </div>
-
                 <div class="item">
                     <p class="btn-item">BONSÁIS</p>
                     <div class="item-content">
                         <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 4</button></div>        
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal25">Guayacan</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal26">Jade Rojo</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal27">Naranjo</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal28">Pino Rastrero</button></div>       
                                 </div>
                             </div>
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Bonsái 8</button></div>         
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal29">Suculenta</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal30">Suculenta Helecho Granizo</button></div> 
                                 </div>
                             </div>
                             <!-- Botones de anterior y siguiente-->
@@ -153,25 +102,24 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item">
                     <p class="btn-item">CÁCTUS Y SUCULENTAS</p>
                     <div class="item-content">
                         <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 4</button></div>        
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal31">Blue</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal32">Ivory Towes</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal33">Jade</button></div>     
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal34">Kiwi</button></div>         
                                 </div>
                             </div>
                             <div class="mySlides">
                                 <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Cáctus/Suculenta 8</button></div>         
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal35">Aptenia cordofolia</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal36">Rozo</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal37">Sunburst</button></div>      
+                                    <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal38">Perfoliata</button></div>          
                                 </div>
                             </div>
                             <!-- Botones de anterior y siguiente-->
@@ -180,89 +128,681 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item">
                     <p class="btn-item">PLANTAS HELECHOS</p>
                     <div class="item-content">
-                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 4</button></div>        
-                                </div>
-                            </div>
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta helecho 8</button></div>         
-                                </div>
-                            </div>
-                            <!-- Botones de anterior y siguiente-->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal39">Espárrago</button></div>   
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal40">Aliento de Niño</button></div>   
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal41">Blue Star</button></div>     
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal42">Peine</button></div>         
                         </div>
                     </div>
                 </div>
-
                 <div class="item">
                     <p class="btn-item">PLANTAS HERBÁCEAS</p>
                     <div class="item-content">
-                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 4</button></div>        
-                                </div>
-                            </div>
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Planta herbácea 8</button></div>         
-                                </div>
-                            </div>
-                            <!-- Botones de anterior y siguiente-->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal43">Lino</button></div>   
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal44">Papiro</button></div>   
                         </div>
                     </div>
                 </div>
 
-                <div class="item">
-                    <p class="btn-item">ORQUÍDEAS</p>
-                    <div class="item-content">
-                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 1</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 2</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 3</button></div>    
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 4</button></div>        
-                                </div>
-                            </div>
-                            <div class="mySlides">
-                                <div class="boxes">
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 5</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 6</button></div>  
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 7</button></div>     
-                                    <div class="box"><img src="../../src/utils/images/ejemplo.jpg"><br/><button class="buttonPA">Orquídea 8</button></div>         
-                                </div>
-                            </div>
-                            <!-- Botones de anterior y siguiente-->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
+
+                <!-------------------------------- MODAL -------------------------------->
+
+                <!--PLANTAS ANUALES-->
+                <div class="modal" id="modal16">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>MYROXYLON BALSAMUM</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide46"><div class="s1">El color de su resina es pardo claro a rojiza. El bálsamo es moldeable en caliente y se fractura en un patrón similar al vidrio flint cuando está frío. La resina seca tiene un complejo aroma consistente principalmente de notas de canela y de vainilla con un suave carácter floral.</div></li>
+                                <li id="slide47"><div class="s2">Los árboles espontáneos abundan en Colombia y Venezuela. Los árboles se cultivan particularmente en Cuba.</div></li>
+                                <li id="slide48"><div class="s3">Su precio apróximado es de COP27,500</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide46">Descripción</a></li>
+                                    <li><a href="#slide47">Distribución y hábitat</a></li>
+                                    <li><a href="#slide48">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
                     </div>
                 </div>
+                <div class="modal" id="modal17">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>ABIES GUATEMALESIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide49"><div class="s1">Es una especie arbórea que puede alcanzar una altura de 50 metros y un diámetro de 1 metro. Se localiza entre el rango altitudinal de los 2400 a los 3500 msnm, en las zonas de vida “Bosque Muy Húmedo Montano Subtropical”, “Bosque Muy Húmedo Montano Bajo Subtropical” y “Bosque Húmedo Montano Bajo Subtropical”, en temperaturas que oscilan entre los 3 y 10 °C. </div></li>
+                                <li id="slide50"><div class="s2">Natural de Centroamérica se encuentra en el sur de México, Guatemala, norte de Honduras y en el sur de El Salvador. Debido a la pérdida de su hábitat, se encuentra catalogada como especie en peligro de extinción.</div></li>
+                                <li id="slide51"><div class="s3">Su precio apróximado es COP243,581</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide49">Descripción</a></li>
+                                    <li><a href="#slide50">Distribución y hábitat</a></li>
+                                    <li><a href="#slide51">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal18">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>PINACEAE</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide52"><div class="s1">Se trata de un género de árboles siempre verdes y gran parte de ellos se caracteriza por poseer grandes dimensiones, es poco común encontrar especies arbustivas. Los pinos son plantas monoicas. La disposición de las ramas le otorga una forma piramidal a la copa. Las hojas se disponen en macroblastos y braquiblastos.</div></li>
+                                <li id="slide53"><div class="s2">La mayoría de los pinos habitan en bosques templados, crecen en áreas que tienen suficiente humedad. Éstas especies forman los bosques templados. Algunos actores aseguran que en México existen hasta 70 especies y subespecies del genero pinus.</div></li>
+                                <li id="slide54"><div class="s3">Su precio apróximado es COP250,000</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide52">Descripción</a></li>
+                                    <li><a href="#slide53">Distribución y hábitat</a></li>
+                                    <li><a href="#slide54">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal19">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>CUPRESSUS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide55"><div class="s1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam autem reprehenderit officiis modi earum harum similique accusamus ipsa sint! Doloremque obcaecati ad cumque placeat tempore architecto, aspernatur esse quisquam! Voluptates!</div></li>
+                                <li id="slide56"><div class="s2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta voluptatum facere consequuntur accusantium nihil aperiam commodi quaerat reiciendis sint ipsam, sed temporibus amet doloribus odio? Assumenda, quaerat. Quasi, maiores.</div></li>
+                                <li id="slide57"><div class="s3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptate, omnis sequi quod et temporibus cumque qui in possimus reprehenderit ad accusamus repudiandae iste? Voluptate nemo inventore possimus id odit.</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide55">Descripción</a></li>
+                                    <li><a href="#slide56">Distribución y hábitat</a></li>
+                                    <li><a href="#slide57">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal20">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>ASTROCARYUM ALATUM</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide58"><div class="s1">Tiene tallos solitarios, con troncos que alcanzan los 4–6 m de alto y 20–30 cm de diámetro. Las hojas de 9–15, 6–7 m de largo, ampliamente patentes; pinnas unas 100 a cada lado, más o menos arregladas regularmente y patentes en el mismo plano, segmentos terminales confluentes a bífidos. Frutos subglobosos a ovoides, de 6–7 cm de largo y 4–5 cm de diámetro, de color café-amarillos, laxamente cubiertos de espinas negras</div></li>
+                                <li id="slide59"><div class="s2">Es común en bosques alterados, pastizales o bosques maduros. Se distribuyen por la zona atlántica de Nicaragua, Honduras a Colombia a una altura de 15–400 m. Su floración se produce durante todo el año.</div></li>
+                                <li id="slide60"><div class="s3">Su precio apróximado es COP252,047</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide58">Descripción</a></li>
+                                    <li><a href="#slide59">Distribución y hábitat</a></li>
+                                    <li><a href="#slide60">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal21">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>EUTERPE OLERACEA</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide61"><div class="s1">También es conocida con el nombre de palma manaca. Crece en el norte de Brasil, Guyana Francesa, Surinam, Guyana, Trinidad y Venezuela y en el Magdalena Medio y la región del Pacífico en Colombia. Su consumo data de tiempos precolombinos y es un alimento muy importante en la dieta amazónica. El cultivo intensivo del asaí se ha extendido dentro del territorio brasileño, durante los años 1980 y 1990.</div></li>
+                                <li id="slide62"><div class="s2">Crece en bosques húmedos de las tierras bajas, en zonas inundables cerca de las riberas de los ríos.Es propia del Andén Pacífico, donde se conoce como palma murrapo o naidí y forma extensas asociaciones en las vegas inundables de los ríos, a menos de 100 m de altitud.</div></li>
+                                <li id="slide63"><div class="s3">Su precio apróximado es COP332,000</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide61">Descripción</a></li>
+                                    <li><a href="#slide62">Distribución y hábitat</a></li>
+                                    <li><a href="#slide63">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+
+                <!--BROMELIAS-->
+                <div class="modal" id="modal22">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>BACTRIS GASIPAES</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide64"><div class="s1">La planta llega a medir hasta 20 metros de alto, es nativa de las regiones tropicales y subtropicales de América. Se aprovecha su fruto, una drupa de gran valor alimentario, su madera y el cogollo tierno, que se cosecha para extraer palmito.</div></li>
+                                <li id="slide65"><div class="s2">Es frecuente encontrarla en la Amazonia. Crece bien en asociaciones, por ejemplo como sombra de café, cacao, árbol de pan y cítricos. Fue plantada desde épocas precolombinas por los indígenas. Hay numerosas variedades incluso sin espinas y una sin semilla.</div></li>
+                                <li id="slide66"><div class="s3">Su precio apróximado es COP461,214</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide64">Descripción</a></li>
+                                    <li><a href="#slide65">Distribución y hábitat</a></li>
+                                    <li><a href="#slide66">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal23">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>SABAL MAURITIIFORMIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide67"><div class="s1">El tronco suele ser verde durante algún tiempo.El peciolo de la hoja llega a alcanzar más de tres metros de largo. Es de crecimiento lento, pudiendo tardar unos doce años antes de mostrar su tallo; pero ya antes resulta decorativa.Vegeta tanto en zonas húmedas como secas, e incluso se desarrolla en suelos calizos.Posee fruto negro, de 8 a 11 mm en diámetro.</div></li>
+                                <li id="slide68"><div class="s2">Las especies son nativas de las regiones tropicales templadas a cálidas del Nuevo Mundo, desde el sureste de Estados Unidos al sur a través del Mar Caribe, México y Centroamérica hasta Colombia y Venezuela en el norte de América del Sur.</div></li>
+                                <li id="slide69"><div class="s3">Su precio apróximado es COP350,854</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide67">Descripción</a></li>
+                                    <li><a href="#slide68">Distribución y hábitat</a></li>
+                                    <li><a href="#slide69">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal24">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>SALIX HUMBOLDTIANA WILD</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide70"><div class="s1">Todos los sauces tienen la corteza acuosa; la madera es dura, flexible y normalmente suave. Poseen esbeltas y fibrosas ramas y a menudo raíces estoloníferas, cuyas características más notables son su dureza, largura y resistencia. También desarrollan fácilmente raíces aéreas.</div></li>
+                                <li id="slide71"><div class="s2">En Colombia presente tanto en zonas montañosas como a lo largo de los ríos de zonas bajas (Cauca, Magdalena, Amazonas), entre 0 y 2900 m.</div></li>
+                                <li id="slide72"><div class="s3">Su precio apróximado es COP56,627</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide70">Descripción</a></li>
+                                    <li><a href="#slide71">Distribución y hábitat</a></li>
+                                    <li><a href="#slide72">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+
+                <!--BONSÁIS-->
+                <div class="modal" id="modal25">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>FICUS SOATENSIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide73"><div class="s1">Nace como epifita sobre troncos y ramas de otros árboles. A medida que va creciendo tiende a desarrollar raíces aéreas y contrafuertes para anclarse al suelo y suele terminar estrangulando a su anfitrión, por lo que forma parte del grupo de los ficus estranguladores.</div></li>
+                                <li id="slide74"><div class="s2">Bosque Andino, Soata (Boyaca, Colombia) desde los 1800-3000 msnm.</div></li>
+                                <li id="slide75"><div class="s3">Su precio apróximado es COP356,991</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide73">Descripción</a></li>
+                                    <li><a href="#slide74">Distribución y hábitat</a></li>
+                                    <li><a href="#slide75">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal26">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>BIGNONIACEAE</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide74"><div class="s1">La componen primordialmente árboles, arbustos, lianas, y unas pocas hierbas. Los miembros de la familia se distribuyen ampliamente, tanto en el viejo mundo como en el nuevo mundo, distribuidos mayormente en los trópicos y subtrópicos, pero además con un número de especies de zonas templadas. La familia incluye unas 650 especies en 110 géneros.</div></li>
+                                <li id="slide75"><div class="s2">En Colombia se ha plantado en los departamentos de Antioquia, Cauca, Putumayo y Nariño, en este último en el valle de Sibundoy; en el departamento de Cundinamarca se observa en los municipios que conforman la Sabana de Bogotá y sus alrededores.</div></li>
+                                <li id="slide76"><div class="s3">Su precio apróximado es COP290,248</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide74">Descripción</a></li>
+                                    <li><a href="#slide75">Distribución y hábitat</a></li>
+                                    <li><a href="#slide76">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal27">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>BRUGMANSIA ARBOREA</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide77"><div class="s1">Son arbustos o pequeños árboles que alcanzan alturas de 3 a 11 metros. Las hojas son alternas, generalmente largas de 10 a 30 cm y con una anchura de 4 a 18 cm con bordes enteros o someramente dentados, a menudo con base del limbo asimétrica, y cubiertas de finas vellosidades. </div></li>
+                                <li id="slide78"><div class="s2">A lo largo de los Andes de Colombia hasta el norte de Chile e incluso el sudeste de Brasil, se han descrito unas sesenta especies, de las cuales solo una decena, incluidos los híbridos, están aceptadas</div></li>
+                                <li id="slide79"><div class="s3">Su precio apróximado es COP70,000</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide77">Descripción</a></li>
+                                    <li><a href="#slide78">Distribución y hábitat</a></li>
+                                    <li><a href="#slide79">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal" id="modal28">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>ELAEIS GUINEENSIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide78"><div class="s1">Como todas las especies de su género Elaeis tiene un tronco (estipe) alto y único. Las inflorescencias se producen en las axilas de las hojas, las cuales son grandes y de tipo pinnado compuesto, con folíolos que parten desde el raquis sobre dos planos regulares. Los folíolos son lanceolados.</div></li>
+                                <li id="slide79"><div class="s2">Es una planta propia de la región tropical calurosa (selva húmeda tropical cálida), crece a altitudes por debajo de los 500 msnm, aunque se desarrolla bien en regiones pantanosas.</div></li>
+                                <li id="slide80"><div class="s3">Su precio apróximado es COP756,738</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide78">Descripción</a></li>
+                                    <li><a href="#slide79">Distribución y hábitat</a></li>
+                                    <li><a href="#slide80">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div> 
+                <div class="modal" id="modal29">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>ELAEIS GUINEENSIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide81"><div class="s1">Como todas las especies de su género Elaeis tiene un tronco (estipe) alto y único. Las inflorescencias se producen en las axilas de las hojas, las cuales son grandes y de tipo pinnado compuesto, con folíolos que parten desde el raquis sobre dos planos regulares. Los folíolos son lanceolados.</div></li>
+                                <li id="slide82"><div class="s2">Es una planta propia de la región tropical calurosa (selva húmeda tropical cálida), crece a altitudes por debajo de los 500 msnm, aunque se desarrolla bien en regiones pantanosas.</div></li>
+                                <li id="slide83"><div class="s3">Su precio apróximado es COP756,738</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide81">Descripción</a></li>
+                                    <li><a href="#slide82">Distribución y hábitat</a></li>
+                                    <li><a href="#slide83">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div> 
+                <div class="modal" id="modal30">
+                    <div class="modal-dialog">
+                        <section class="modal-header">
+                            <P>ELAEIS GUINEENSIS</P>
+                            <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                        </section>
+                        <section class="modal-content">
+                            <ul class="slider">
+                                <li id="slide82"><div class="s1">Como todas las especies de su género Elaeis tiene un tronco (estipe) alto y único. Las inflorescencias se producen en las axilas de las hojas, las cuales son grandes y de tipo pinnado compuesto, con folíolos que parten desde el raquis sobre dos planos regulares. Los folíolos son lanceolados.</div></li>
+                                <li id="slide83"><div class="s2">Es una planta propia de la región tropical calurosa (selva húmeda tropical cálida), crece a altitudes por debajo de los 500 msnm, aunque se desarrolla bien en regiones pantanosas.</div></li>
+                                <li id="slide84"><div class="s3">Su precio apróximado es COP756,738</div></li>
+                            </ul>
+                            <nav class="sliderMenu">
+                                <ul class="menuSlider">
+                                    <li><a href="#slide82">Descripción</a></li>
+                                    <li><a href="#slide83">Distribución y hábitat</a></li>
+                                    <li><a href="#slide84">Precio apróx</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div> 
             </div>
+
+            <!--CÁCTUS Y SUCULENTAS-->
+            <div class="modal" id="modal31">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>MYROXYLON BALSAMUM</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide85"><div class="s1">El color de su resina es pardo claro a rojiza. El bálsamo es moldeable en caliente y se fractura en un patrón similar al vidrio flint cuando está frío. La resina seca tiene un complejo aroma consistente principalmente de notas de canela y de vainilla con un suave carácter floral.</div></li>
+                            <li id="slide86"><div class="s2">Los árboles espontáneos abundan en Colombia y Venezuela. Los árboles se cultivan particularmente en Cuba.</div></li>
+                            <li id="slide87"><div class="s3">Su precio apróximado es de COP27,500</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide85">Descripción</a></li>
+                                <li><a href="#slide86">Distribución y hábitat</a></li>
+                                <li><a href="#slide87">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="moda32">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>ABIES GUATEMALESIS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide88"><div class="s1">Es una especie arbórea que puede alcanzar una altura de 50 metros y un diámetro de 1 metro. Se localiza entre el rango altitudinal de los 2400 a los 3500 msnm, en las zonas de vida “Bosque Muy Húmedo Montano Subtropical”, “Bosque Muy Húmedo Montano Bajo Subtropical” y “Bosque Húmedo Montano Bajo Subtropical”, en temperaturas que oscilan entre los 3 y 10 °C. </div></li>
+                            <li id="slide89"><div class="s2">Natural de Centroamérica se encuentra en el sur de México, Guatemala, norte de Honduras y en el sur de El Salvador. Debido a la pérdida de su hábitat, se encuentra catalogada como especie en peligro de extinción.</div></li>
+                            <li id="slide90"><div class="s3">Su precio apróximado es COP243,581</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide88">Descripción</a></li>
+                                <li><a href="#slide89">Distribución y hábitat</a></li>
+                                <li><a href="#slide90">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal33">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>PINACEAE</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide91"><div class="s1">Se trata de un género de árboles siempre verdes y gran parte de ellos se caracteriza por poseer grandes dimensiones, es poco común encontrar especies arbustivas. Los pinos son plantas monoicas. La disposición de las ramas le otorga una forma piramidal a la copa. Las hojas se disponen en macroblastos y braquiblastos.</div></li>
+                            <li id="slide92"><div class="s2">La mayoría de los pinos habitan en bosques templados, crecen en áreas que tienen suficiente humedad. Éstas especies forman los bosques templados. Algunos actores aseguran que en México existen hasta 70 especies y subespecies del genero pinus.</div></li>
+                            <li id="slide93"><div class="s3">Su precio apróximado es COP250,000</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide91">Descripción</a></li>
+                                <li><a href="#slide92">Distribución y hábitat</a></li>
+                                <li><a href="#slide93">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal34">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>CUPRESSUS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide94"><div class="s1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam autem reprehenderit officiis modi earum harum similique accusamus ipsa sint! Doloremque obcaecati ad cumque placeat tempore architecto, aspernatur esse quisquam! Voluptates!</div></li>
+                            <li id="slide95"><div class="s2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta voluptatum facere consequuntur accusantium nihil aperiam commodi quaerat reiciendis sint ipsam, sed temporibus amet doloribus odio? Assumenda, quaerat. Quasi, maiores.</div></li>
+                            <li id="slide96"><div class="s3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptate, omnis sequi quod et temporibus cumque qui in possimus reprehenderit ad accusamus repudiandae iste? Voluptate nemo inventore possimus id odit.</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide94">Descripción</a></li>
+                                <li><a href="#slide95">Distribución y hábitat</a></li>
+                                <li><a href="#slide96">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal35">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>ASTROCARYUM ALATUM</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide97"><div class="s1">Tiene tallos solitarios, con troncos que alcanzan los 4–6 m de alto y 20–30 cm de diámetro. Las hojas de 9–15, 6–7 m de largo, ampliamente patentes; pinnas unas 100 a cada lado, más o menos arregladas regularmente y patentes en el mismo plano, segmentos terminales confluentes a bífidos. Frutos subglobosos a ovoides, de 6–7 cm de largo y 4–5 cm de diámetro, de color café-amarillos, laxamente cubiertos de espinas negras</div></li>
+                            <li id="slide98"><div class="s2">Es común en bosques alterados, pastizales o bosques maduros. Se distribuyen por la zona atlántica de Nicaragua, Honduras a Colombia a una altura de 15–400 m. Su floración se produce durante todo el año.</div></li>
+                            <li id="slide99"><div class="s3">Su precio apróximado es COP252,047</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide97">Descripción</a></li>
+                                <li><a href="#slide98">Distribución y hábitat</a></li>
+                                <li><a href="#slide99">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal36">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>EUTERPE OLERACEA</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide100"><div class="s1">También es conocida con el nombre de palma manaca. Crece en el norte de Brasil, Guyana Francesa, Surinam, Guyana, Trinidad y Venezuela y en el Magdalena Medio y la región del Pacífico en Colombia. Su consumo data de tiempos precolombinos y es un alimento muy importante en la dieta amazónica. El cultivo intensivo del asaí se ha extendido dentro del territorio brasileño, durante los años 1980 y 1990.</div></li>
+                            <li id="slide101"><div class="s2">Crece en bosques húmedos de las tierras bajas, en zonas inundables cerca de las riberas de los ríos.Es propia del Andén Pacífico, donde se conoce como palma murrapo o naidí y forma extensas asociaciones en las vegas inundables de los ríos, a menos de 100 m de altitud.</div></li>
+                            <li id="slide102"><div class="s3">Su precio apróximado es COP332,000</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide100">Descripción</a></li>
+                                <li><a href="#slide101">Distribución y hábitat</a></li>
+                                <li><a href="#slide102">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal37">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>BACTRIS GASIPAES</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide103"><div class="s1">La planta llega a medir hasta 20 metros de alto, es nativa de las regiones tropicales y subtropicales de América. Se aprovecha su fruto, una drupa de gran valor alimentario, su madera y el cogollo tierno, que se cosecha para extraer palmito.</div></li>
+                            <li id="slide104"><div class="s2">Es frecuente encontrarla en la Amazonia. Crece bien en asociaciones, por ejemplo como sombra de café, cacao, árbol de pan y cítricos. Fue plantada desde épocas precolombinas por los indígenas. Hay numerosas variedades incluso sin espinas y una sin semilla.</div></li>
+                            <li id="slide105"><div class="s3">Su precio apróximado es COP461,214</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide103">Descripción</a></li>
+                                <li><a href="#slide104">Distribución y hábitat</a></li>
+                                <li><a href="#slide105">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal38">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>SABAL MAURITIIFORMIS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide106"><div class="s1">El tronco suele ser verde durante algún tiempo.El peciolo de la hoja llega a alcanzar más de tres metros de largo. Es de crecimiento lento, pudiendo tardar unos doce años antes de mostrar su tallo; pero ya antes resulta decorativa.Vegeta tanto en zonas húmedas como secas, e incluso se desarrolla en suelos calizos.Posee fruto negro, de 8 a 11 mm en diámetro.</div></li>
+                            <li id="slide107"><div class="s2">Las especies son nativas de las regiones tropicales templadas a cálidas del Nuevo Mundo, desde el sureste de Estados Unidos al sur a través del Mar Caribe, México y Centroamérica hasta Colombia y Venezuela en el norte de América del Sur.</div></li>
+                            <li id="slide108"><div class="s3">Su precio apróximado es COP350,854</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide106">Descripción</a></li>
+                                <li><a href="#slide107">Distribución y hábitat</a></li>
+                                <li><a href="#slide108">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+
+            <!-- PLANTAS HELECHOS -->
+            <div class="modal" id="modal39">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>SALIX HUMBOLDTIANA WILD</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide110"><div class="s1">Todos los sauces tienen la corteza acuosa; la madera es dura, flexible y normalmente suave. Poseen esbeltas y fibrosas ramas y a menudo raíces estoloníferas, cuyas características más notables son su dureza, largura y resistencia. También desarrollan fácilmente raíces aéreas.</div></li>
+                            <li id="slide111"><div class="s2">En Colombia presente tanto en zonas montañosas como a lo largo de los ríos de zonas bajas (Cauca, Magdalena, Amazonas), entre 0 y 2900 m.</div></li>
+                            <li id="slide112"><div class="s3">Su precio apróximado es COP56,627</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide110">Descripción</a></li>
+                                <li><a href="#slide111">Distribución y hábitat</a></li>
+                                <li><a href="#slide112">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal40">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>FICUS SOATENSIS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide113"><div class="s1">Nace como epifita sobre troncos y ramas de otros árboles. A medida que va creciendo tiende a desarrollar raíces aéreas y contrafuertes para anclarse al suelo y suele terminar estrangulando a su anfitrión, por lo que forma parte del grupo de los ficus estranguladores.</div></li>
+                            <li id="slide114"><div class="s2">Bosque Andino, Soata (Boyaca, Colombia) desde los 1800-3000 msnm.</div></li>
+                            <li id="slide115"><div class="s3">Su precio apróximado es COP356,991</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide113">Descripción</a></li>
+                                <li><a href="#slide114">Distribución y hábitat</a></li>
+                                <li><a href="#slide115">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal41">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>BIGNONIACEAE</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide116"><div class="s1">La componen primordialmente árboles, arbustos, lianas, y unas pocas hierbas. Los miembros de la familia se distribuyen ampliamente, tanto en el viejo mundo como en el nuevo mundo, distribuidos mayormente en los trópicos y subtrópicos, pero además con un número de especies de zonas templadas. La familia incluye unas 650 especies en 110 géneros.</div></li>
+                            <li id="slide117"><div class="s2">En Colombia se ha plantado en los departamentos de Antioquia, Cauca, Putumayo y Nariño, en este último en el valle de Sibundoy; en el departamento de Cundinamarca se observa en los municipios que conforman la Sabana de Bogotá y sus alrededores.</div></li>
+                            <li id="slide118"><div class="s3">Su precio apróximado es COP290,248</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide116">Descripción</a></li>
+                                <li><a href="#slide117">Distribución y hábitat</a></li>
+                                <li><a href="#slide118">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="modal" id="modal42">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>BRUGMANSIA ARBOREA</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide119"><div class="s1">Son arbustos o pequeños árboles que alcanzan alturas de 3 a 11 metros. Las hojas son alternas, generalmente largas de 10 a 30 cm y con una anchura de 4 a 18 cm con bordes enteros o someramente dentados, a menudo con base del limbo asimétrica, y cubiertas de finas vellosidades. </div></li>
+                            <li id="slide120"><div class="s2">A lo largo de los Andes de Colombia hasta el norte de Chile e incluso el sudeste de Brasil, se han descrito unas sesenta especies, de las cuales solo una decena, incluidos los híbridos, están aceptadas</div></li>
+                            <li id="slide121"><div class="s3">Su precio apróximado es COP70,000</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide119">Descripción</a></li>
+                                <li><a href="#slide120">Distribución y hábitat</a></li>
+                                <li><a href="#slide121">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+
+            <!-- PLANTAS HERBACEAS -->
+            <div class="modal" id="modal43">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>ELAEIS GUINEENSIS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide122"><div class="s1">Como todas las especies de su género Elaeis tiene un tronco (estipe) alto y único. Las inflorescencias se producen en las axilas de las hojas, las cuales son grandes y de tipo pinnado compuesto, con folíolos que parten desde el raquis sobre dos planos regulares. Los folíolos son lanceolados.</div></li>
+                            <li id="slide123"><div class="s2">Es una planta propia de la región tropical calurosa (selva húmeda tropical cálida), crece a altitudes por debajo de los 500 msnm, aunque se desarrolla bien en regiones pantanosas.</div></li>
+                            <li id="slide124"><div class="s3">Su precio apróximado es COP756,738</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide122">Descripción</a></li>
+                                <li><a href="#slide123">Distribución y hábitat</a></li>
+                                <li><a href="#slide124">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div> 
+            <div class="modal" id="modal44">
+                <div class="modal-dialog">
+                    <section class="modal-header">
+                        <P>ELAEIS GUINEENSIS</P>
+                        <button class="close-modal" aria-label="close modal" data-close> ✕ </button>
+                    </section>
+                    <section class="modal-content">
+                        <ul class="slider">
+                            <li id="slide125"><div class="s1">Como todas las especies de su género Elaeis tiene un tronco (estipe) alto y único. Las inflorescencias se producen en las axilas de las hojas, las cuales son grandes y de tipo pinnado compuesto, con folíolos que parten desde el raquis sobre dos planos regulares. Los folíolos son lanceolados.</div></li>
+                            <li id="slide126"><div class="s2">Es una planta propia de la región tropical calurosa (selva húmeda tropical cálida), crece a altitudes por debajo de los 500 msnm, aunque se desarrolla bien en regiones pantanosas.</div></li>
+                            <li id="slide127"><div class="s3">Su precio apróximado es COP756,738</div></li>
+                        </ul>
+                        <nav class="sliderMenu">
+                            <ul class="menuSlider">
+                                <li><a href="#slide125">Descripción</a></li>
+                                <li><a href="#slide126">Distribución y hábitat</a></li>
+                                <li><a href="#slide127">Precio apróx</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div> 
         </div>
-        <script src="../../src/js/pya.js"></script>
+   <script src="../../src/utils/js/plantas.js"></script>
    </body>
 </html>
