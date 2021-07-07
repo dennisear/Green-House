@@ -38,31 +38,9 @@ p{
     text-align: justify;
     margin: 7%;
 }
-@media only screen and (min-width: 320px) and (max-width:440px){
-    .contenido{
-        display:contents;
-        font-size: 70%;
-        text-align: center;
-    }
-    .integrantes{
-        align-content:space-between ;
-        border-spacing: 1em 0em;
-        margin-top: 2%;
-        margin-left: 0%;
-        margin-bottom: 0%;
-    }
-    .integrantes img{
-        border: 5px solid #548235;
-    }
-} 
-@media only screen and (min-width: 441px) and (max-width:600px){
+/*---------------------RESPONSIVE------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width:800px){
     .contenido{
         font-size: 80%;
-        text-align: center;
-    }
-} 
-@media only screen and (min-width: 601px) and (max-width:800px){
-    .contenido{
-        font-size: 90%;
     }
 } 
