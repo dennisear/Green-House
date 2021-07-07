@@ -1,0 +1,470 @@
+/* -------------- Submenu styles -------------- */
+.menuPYA{
+  background: #C4C4C4;
+  border:2px solid #A7AA0B;
+  font-family: "Edmondsans";
+}
+.menuPYA li {
+  display: inline-block;
+  max-width: 150px;
+  font-size: 15.5px;
+  width: 100%;
+  line-height:45px;
+  text-align: center;
+  border-right:2px solid #A7AA0B;
+}
+.menuPYA li:hover{
+  background: #A9D18E;
+} 
+
+/* -------------- ACCORDION CONTENT STYLES -------------- */
+.boxes{
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+.boxes img{
+  width: 150px;
+  height: 150px;
+}
+.prev, .next {  /*Previous and next buttons*/
+  cursor: pointer;
+  color: #A9D18E;
+  
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev:hover, .next:hover { 
+  background-color: #A9D18E;
+  color: aliceblue;
+}
+
+/* -------------- MODALS STYLES -------------- */
+.open-modal {
+  width: 100%;
+  color: #548235;
+  font-size: 15px;
+  padding: 0.5em 1.2em;
+  background: #C4C4C4;
+  border: 2px solid;
+  border-color: #548235;
+  transition: all 1s ease;
+  position: relative;
+}
+.open-modal:hover {
+  background: #548235;
+  color: aliceblue;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-dialog {
+  position: relative;
+  width: 95%;
+  height: 90vh;
+  border-radius: 5px;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+}
+.modal-dialog>* {
+  padding: 1rem;
+}
+.modal-header {
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+.modal p+p {
+  margin-top: 1rem;
+} 
+
+/*-------- Slider inside modals --------*/
+ul.slider {
+ position: relative;
+}
+ul.slider li {
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  background: #fff;
+}
+ul.slider li:first-child {
+  opacity: 1;
+}
+ul.slider li:target {
+  opacity: 1;
+}
+ul.slider li {
+  width: 98%;
+  height: 30vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  padding-top: 1vh;
+  font-size: calc( 0.7rem + 1vw );
+  text-align: center;
+  color:#fff;
+}
+
+
+
+#slide1, #slide2, #slide3{
+  background: url(../images/pinG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide4, #slide5, #slide6{
+  background: url(../images/pinG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide7, #slide8, #slide9{
+  background: url(../images/pinG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide10, #slide11, #slide12{
+  background: url(../images/pinG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide13, #slide14, #slide15{
+  background: url(../images/palmG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide16, #slide17, #slide18{
+  background: url(../images/palmG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide19, #slide20, #slide21{
+  background: url(../images/palmG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide22, #slide23, #slide24{
+  background: url(../images/palmG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide25, #slide26, #slide27{
+  background: url(../images/natG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide28, #slide29, #slide30{
+  background: url(../images/natG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide31, #slide32, #slide33{
+  background: url(../images/natG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide34, #slide35, #slide36{
+  background: url(../images/natG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide37, #slide38, #slide39{
+  background: url(../images/intG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide40, #slide41, #slide42{
+  background: url(../images/intG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide43, #slide44, #slide45{
+  background: url(../images/intG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+#slide46, #slide47, #slide48{
+  background: url(../images/pinG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide49, #slide50, #slide51{
+  background: url(../images/pinG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide52, #slide53, #slide54{
+  background: url(../images/pinG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide55, #slide56, #slide57{
+  background: url(../images/pinG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide58, #slide59, #slide60{
+  background: url(../images/palmG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide61, #slide62, #slide63{
+  background: url(../images/palmG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide64, #slide65, #slide66{
+  background: url(../images/palmG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide67, #slide68, #slide69{
+  background: url(../images/palmG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide70, #slide71, #slide72{
+  background: url(../images/natG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide73, #slide74, #slide75{
+  background: url(../images/natG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide76, #slide77, #slide78{
+  background: url(../images/natG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide79, #slide80, #slide81{
+  background: url(../images/natG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide82, #slide83, #slide84{
+  background: url(../images/intG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide85, #slide86, #slide87{
+  background: url(../images/intG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide88, #slide89, #slide90{
+  background: url(../images/intG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide91, #slide92, #slide93{
+  background: url(../images/pinG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide94, #slide95, #slide96{
+  background: url(../images/pinG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide97, #slide98, #slide99{
+  background: url(../images/pinG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide100, #slide101, #slide102{
+  background: url(../images/pinG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide103, #slide104, #slide105{
+  background: url(../images/palmG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide106, #slide107, #slide108{
+  background: url(../images/palmG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide109, #slide110, #slide111{
+  background: url(../images/palmG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide112, #slide113, #slide114{
+  background: url(../images/palmG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide115, #slide116, #slide117{
+  background: url(../images/natG1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide118, #slide119, #slide120{
+  background: url(../images/natG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide121, #slide122, #slide124{
+  background: url(../images/natG3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide125, #slide126, #slide127{
+  background: url(../images/natG4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.sliderMenu {
+  width: 91.5.5vw;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f1f2f3;
+}
+
+.sliderMenu ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sliderMenu ul li {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.sliderMenu a {
+  font-size: calc( 1.2rem + 1vw );
+  color: #548235;
+  line-height: 1.8;
+  flex-grow: 1;
+  text-align: center;
+  border-top: 5px solid #548235;
+  border-right: 1px solid #548235;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.nav li:last-child a {
+  border-right: 0;
+}
+
+.sliderMenu a:hover {
+  background-color: #548235;
+  color: #A9D18E;
+  border-top-color: #A9D18E;
+}
+
+.sliderMenu a:active {
+  border-top-color: #A7AA0B;
+  background: #A7AA0B;
+  color: #548235;
+    }
+
+
+.s1, .s2, .s3{
+  background: rgba(169, 209, 142, 0.7);
+}
+
+.s1{
+  width: 40%;
+}
+.s2{
+  width: 100%;
+  margin-top: 10%;
+}
+.s3{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- Responsive design -------- */
+/*Submenu on smartphones/tablets*/
+@media only screen and (max-width:768px){
+  .menuPYA{
+    display: none; /*I hide it because the submenu is not pretty if it is set to that small size*/
+  }
+} 
+@media only screen and (min-width:769px) and (max-width:830px){
+  .menuPYA li {
+    max-width: 89.3px;
+    font-size: 10px;
+  }
+} 
+@media only screen and (min-width:831px) and (max-width:940px){
+  .menuPYA li {
+    max-width: 93px;
+    font-size: 10px;
+  }
+} 
+@media only screen and (min-width:941px) and (max-width:1100px){
+  .menuPYA li {
+    max-width: 105.5px;
+    font-size: 12px;
+  }
+} 
+@media only screen and (min-width:1101px) and (max-width:1259px){
+  .menuPYA li {
+    max-width: 106px;
+    font-size: 12px;
+  }
+} 
