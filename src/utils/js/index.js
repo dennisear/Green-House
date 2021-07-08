@@ -40,6 +40,6 @@ function goToIg(){
     location.href="https://www.instagram.com"  //Función que dirige al usuario a la cuenta de instagram de green house
 }
 function goToYb(){
-    location.href="https://www.youtube.com" //Función que dirige al usuario a la cuenta de youtube de green house
+    location.href="https://www.youtube.com/channel/UCgTnRFSlSKSRG92X7ZNoPew" //Función que dirige al usuario a la cuenta de youtube de green house
 }
 
