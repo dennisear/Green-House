@@ -2,7 +2,6 @@
 .menuPYA{
   background: #C4C4C4;
   border:2px solid #A7AA0B;
-  font-family: "Edmondsans";
 }
 .menuPYA li {
   display: inline-block;
@@ -31,7 +30,6 @@
 .prev, .next {  /*Previous and next buttons*/
   cursor: pointer;
   color: #A9D18E;
-  
   font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -81,7 +79,7 @@
 .modal-dialog {
   position: relative;
   width: 95%;
-  height: 90vh;
+  height: 80vh;
   border-radius: 5px;
   background: #fff;
   overflow: auto;
@@ -133,9 +131,8 @@ ul.slider li {
   justify-content: column;
 }
 
-
 #slide1, #slide2, #slide3{
-  background: url(../images/pinG1.jpg);
+background: url(../images/pinG1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -311,26 +308,23 @@ ul.slider li {
 .sliderMenu {
   width: 91.5.5vw;
   position: absolute;
-  top: auto;
+  top: 90%;
   right: 0;
   bottom: 0;
   left: 0;
   background: #f1f2f3;
 }
-
 .sliderMenu ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .sliderMenu ul li {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-
 .sliderMenu a {
   font-size: calc( 1.2rem + 1vw );
   color: #548235;
@@ -342,28 +336,22 @@ ul.slider li {
   flex-wrap: wrap;
   position: relative;
 }
-
 .nav li:last-child a {
   border-right: 0;
 }
-
 .sliderMenu a:hover {
   background-color: #548235;
   color: #A9D18E;
   border-top-color: #A9D18E;
 }
-
 .sliderMenu a:active {
   border-top-color: #A7AA0B;
   background: #A7AA0B;
   color: #548235;
-    }
-
-
+}
 .s1, .s2, .s3{
   background: rgba(169, 209, 142, 0.7);
 }
-
 .s1{
   width: 40%;
 }
@@ -374,23 +362,6 @@ ul.slider li {
 .s3{
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------- Responsive design -------- */
 /*Submenu on smartphones/tablets*/
@@ -404,11 +375,17 @@ ul.slider li {
     max-width: 89.3px;
     font-size: 10px;
   }
+  .modal-dialog{
+    height: 55vh;
+  }
 } 
 @media only screen and (min-width:831px) and (max-width:940px){
   .menuPYA li {
     max-width: 93px;
     font-size: 10px;
+  }
+  .modal-dialog{
+    height: 65vh;
   }
 } 
 @media only screen and (min-width:941px) and (max-width:1100px){
@@ -416,10 +393,16 @@ ul.slider li {
     max-width: 105.5px;
     font-size: 12px;
   }
+  .modal-dialog{
+    height: 65vh;
+  }
 } 
 @media only screen and (min-width:1101px) and (max-width:1259px){
   .menuPYA li {
     max-width: 106px;
     font-size: 12px;
   }
+  .modal-dialog{
+    height: 70vh;
+  }  
 } 

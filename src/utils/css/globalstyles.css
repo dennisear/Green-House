@@ -10,7 +10,10 @@
     font-family: "Sunny"; /*Font for titles, subtitles and highlighting words */
     src: url("../../utils/fonts/SunnyWeather.otf")
 }
-  
+
+body{
+    font-family: "Edmondsans"; 
+}  
 
 /* -------------------- Header styles for the entire website -------------------- */
 .header{
@@ -36,7 +39,6 @@
     border:2px solid #A7AA0B;  
 }
 .menu ul{
-    font-family: "Edmondsans";
     margin: 0;
     padding: 15px 20px;
     display: flex;
@@ -103,7 +105,6 @@ ul, li, a {
 .main-container{ /*Content styles*/
     width: 100%;
     text-align: center;
-    font-family: "Edmondsans";
 }
 .btn-item{ /*Content styles*/
     background: #A9D18E;
