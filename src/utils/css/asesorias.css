@@ -42,3 +42,9 @@ h4{
     width: 50%;
     margin-left:28%;
 }
+@media only screen and (min-width: 768px) and (max-width:1000px){
+    h4{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
