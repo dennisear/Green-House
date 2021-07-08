@@ -129,15 +129,12 @@ document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
 modal = modals('30', 'JADE', '88', '89', '90', 'Aunque crece lentamente, esta planta es una de las más longevas y existen más de 1,400 variedades. Es conocida también como la “planta del dinero”, ya que, en la cultura china, esta simboliza la buena suerte y la abundancia económica.', 'Originalmente llamada Crassula Ovata, esta atractiva planta es originaria de Mozambique y pertenece a la familia de las suculentas, con más de 1,400 variedades.', 'Su precio apróximado es COP15,000')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
 
-
 // -- HELECHOS --
 modal = modals('31', 'ESPÁRRAGO', '91', '92', '93', 'La esparraguera produce diminutas flores al final del verano, casi insignificantes. Luego se transforman en bayas pequeñas, primero verdes y luego rojas cuando están maduras.', 'Florece en verano pudiendo continuar hasta principios de otoño. Ama la luz, pero no el sol directo, por lo cual la ubicación ideal es aquella en que reciba luz brillante filtrada. Admite sombra; de hecho es preferible ubicarla a la sombra antes que en sol pleno que hará amarillear su follaje.', 'Su precio apróximado es de COP17,250')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
 modal = modals('32', 'ALIENTO DE NIÑO', '94', '95', '96', 'Se desempeña mejor en suelos ligeramente ácidos y ricos en materia orgánica. Se recomienda mantener el suelo húmedo, regando libremente en clima seco, aplicar un mantillo de verano para retener la humedad y fertilizar regularmente para una mejor visualización.', 'Por lo general, los helechos crecen en selvas lluviosas tropicales. También pueden hallarse en otros lugares cálidos y húmedos en los que hay abundante sombra. Muy pocas especies de helecho crecen en regiones frías y áridas.', 'Su precio apróximado es de COP15,000')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
-
 modal = modals('33', 'ALIENTO DE NIÑO', '97', '98', '99', 'Es un helecho de aspecto interesante con frondas alargadas y un agradable color verde-azul. Su capacidad para tolerar condiciones de poca luz y su cuidado relativamente fácil lo hacen en una gran opción para la casa.', 'Phlebodium aureum se encuentra sobre todo en los bosques tropicales de Sudamérica, aunque su área de distribución natural también se extiende a Norteamérica.', 'Su precio apróximado es COP20,700')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
-
 modal = modals('34', 'PEINE', '100', '101', '102', 'No tolera ambientes secos ni calurosos. Necesita alta humedad en todo momento. No regar sobre las hojas, sino directo a la tierra o la base de la planta. Ideal para interiores. Proteger en exterior.', 'Por lo general, los helechos crecen en selvas lluviosas tropicales. También pueden hallarse en otros lugares cálidos y húmedos en los que hay abundante sombra. Muy pocas especies de helecho crecen en regiones frías y áridas.', 'Su precio apróximado es COP15,000')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
