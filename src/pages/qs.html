@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>¿Quiénes somos?</title>
+		<link rel="stylesheet" type="text/css" href="../../src/utils/css/globalstyles.css">
+        <link rel="stylesheet" type="text/css" href="../../src/utils/css/qs.css">
+        <link rel="shortcut icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+        <script src="../../src/utils/js/index.js"></script>
+	</head>
+	<body>
+       <div class="container">
+            <header class="header">
+                <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
+                <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
+            </header>
+            <div class="headerMenu">
+              <input type="checkbox" id="btn-menu">
+              <label for="btn-menu"> <img src="../../src/utils/images/men.png" class="men"></img>  </label>
+              <nav class="menu">
+                  <ul>
+                      <li onclick="changeIndex()"> INICIO</li>
+                      <li onclick="changePlantas()"> PLANTAS</li>
+                      <li onclick="changeArboles()"> ÁRBOLES</li>
+                      <li onclick="changeAsesorias()"> ASESORÍAS</li>
+                      <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      <div class="banner"></div>
+      
+      <!----------------CONTENEDOR GENERAL--------------------------------------------------------------->
+      <div class="contenido">
+      <!----------------CONTENEDOR OBJETIVO-------------------------------------------------------------->
+          <div class="objetivos">
+              <h3>Green house es un sitio web creado con el fin de poder brindarles el reconocimiento adecuado a los horticultores y destacar la biodiversidad de árboles y plantas que estos emplean.</h3>
+          </div>
+      <!----------------CONTENEDOR INTEGRANTES DEL PROYECTO----------------------------------------------->
+      <table class="integrantes" style="width: 90%;" cellpadding="50%">
+        <thead><!---CABEZA DE LA TABLA-->
+          <tr>
+              <th style="background-color: #A9D18E;"><img src="../utils/images/user1.png" alt=""><h2>Katerin Torres</h2></th>
+              <th style="background-color: #A9D18E;"><img src="../utils/images/user2.png" alt=""><h2>Dennis Arango</h2></th>
+              <th style="background-color: #A9D18E;"><img src="../utils/images/user2.jpg" alt=""><h2>Paula Ochoa</h2></th>
+          </tr>
+        </thead>
+        <tbody><!---CUERPO DE LA TABLA--->
+          <tr>
+            <td style="background-color: #A9D18E;">
+              <p>Estudiante de desarrollo Front-End en el programa Techpower, Kuepa. Me considero una persona de rapido aprendizaje, dispuesta a nuevas experiencias tanto academicas como laborales.
+                 A traves de mis habilidades y conocimientos busco generar mas proyectos que contribuyan al desarrollo social de la comunidad.</p></td>
+            <td style="background-color: #A9D18E;">
+              <p>Estudiante de desarrollo Front-End en el programa Techpower, Kuepa. Me considero una persona muy creativa de rapido aprendizaje, dispuesta a las nuevas experiencias tanto academicas 
+                como laborales. A traves de mis habilidades y conocimientos busco generar mas proyectos que contribuyan al desarrollo social de la comunidad.</p></td>
+            <td style="background-color: #A9D18E;">
+              <p>Estudiante de desarrollo Front-End en el programa Techpower, Kuepa. Me considero una persona muy introvertida,creativa y adaptable, con buenas bases academicas para desarrollar todo 
+                de tipo de proyecto propuesto, con el fin de contribuir a la sociedad positivamente.</p></td>
+          </tr>
+        </tbody>
+        </table>
+        </div>
+   </body>
+</html>

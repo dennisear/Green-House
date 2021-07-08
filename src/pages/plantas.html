@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Plantas</title>
+		<link rel="stylesheet" type="text/css" href="../../src/utils/css/globalstyles.css">
+        <link rel="stylesheet" type="text/css" href="../../src/utils/css/pya.css">
+        <link rel="shortcut icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+        <script src="../../src/utils/js/index.js"></script>
+	</head>
+	<body>
+       <div class="container">
+            <header class="header">
+                <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
+                <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
+            </header>
+            <div class="headerMenu">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"> <img src="../../src/utils/images/men.png" class="men"></img>  </label>
+                <nav class="menu">
+                    <ul>
+                        <li onclick="changeIndex()"> INICIO</li>
+                        <li onclick="changePlantas()"> PLANTAS</li>
+                        <li onclick="changeArboles()"> ÁRBOLES</li>
+                        <li onclick="changeAsesorias()"> ASESORÍAS</li>
+                        <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="menuPYA"> <!--BOTONES NOOOO FUNCIONALES AUN-->
+                <ul>
+                    <li> Plantas Anuales </li>
+                    <li> Bromelias </li>
+                    <li> Bonsáis </li>
+                    <li> Cáctus y suculentas </li>
+                    <li> Plantas Helechos </li>                
+                </ul>
+            </nav>
+            <div class="banner"></div>
+        </div>
+        <div class="main-container">
+            <div class="list-container">
+                <div class="item">
+                    <!----------------ACCORDION FIRST OPTION---------------->
+                    <p class="btn-item">PLANTAS ANUALES</p>
+                    <div class="item-content">
+                        <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
+                            <div class="mySlides">
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/anP1.jpg"><br /><button type="button" class="open-modal" data-open="modal16">Afelandra</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/anP2.jpg"><br /><button type="button" class="open-modal" data-open="modal17">Begonia Big</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/anP3.jpg"><br /><button type="button" class="open-modal" data-open="modal18">Geranio</button></div>   
+                                    <div class="box"><img src="../../src/utils/images/anP4.jpg"><br /><button type="button" class="open-modal" data-open="modal19">Kalachoe</button></div>       
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="boxes">
+                                    <div class="box"><img src="../../src/utils/images/anP5.jpg"><br /><button type="button" class="open-modal" data-open="modal20">Novio</button></div> 
+                                    <div class="box"><img src="../../src/utils/images/anP6.jpg"><br /><button type="button" class="open-modal" data-open="modal21">Nueva Guinea</button></div> 
+                                </div>
+                            </div>
+                            <!-- Botones de anterior y siguiente-->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION SECOND OPTION---------------->
+                    <p class="btn-item">BROMELIAS</p>
+                    <div class="item-content">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/brP1.jpg"><br /><button type="button" class="open-modal" data-open="modal22">Davine</button></div> 
+                            <div class="box"><img src="../../src/utils/images/brP2.jpg"><br /><button type="button" class="open-modal" data-open="modal23">Guzmania</button></div> 
+                            <div class="box"><img src="../../src/utils/images/brP3.jpg"><br /><button type="button" class="open-modal" data-open="modal24">Guzmania Jazz</button></div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION THIRD OPTION---------------->
+                    <p class="btn-item">BONSÁIS</p>
+                    <div class="item-content">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/bonP1.jpg"><br /><button type="button" class="open-modal" data-open="modal25">Guayacan</button></div> 
+                            <div class="box"><img src="../../src/utils/images/bonP2.jpg"><br /><button type="button" class="open-modal" data-open="modal26">Jade Rojo</button></div> 
+                            <div class="box"><img src="../../src/utils/images/bonP3.jpg"><br /><button type="button" class="open-modal" data-open="modal27">Naranjo</button></div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION FOURTH OPTION---------------->
+                    <p class="btn-item">CÁCTUS Y SUCULENTAS</p>
+                    <div class="item-content">
+                        <div class="boxes">
+                                <div class="box"><img src="../../src/utils/images/cacP1.jpg"><br /><button type="button" class="open-modal" data-open="modal28">Blue</button></div>   
+                                <div class="box"><img src="../../src/utils/images/cacP2.jpg"><br /><button type="button" class="open-modal" data-open="modal29">Ivory Towes</button></div>   
+                                <div class="box"><img src="../../src/utils/images/cacP3.jpg"><br /><button type="button" class="open-modal" data-open="modal30">Jade</button></div>         
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION FIFTH OPTION---------------->
+                    <p class="btn-item">PLANTAS HELECHOS</p>
+                    <div class="item-content">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/helP1.jpg"><br /><button type="button" class="open-modal" data-open="modal31">Espárrago</button></div>   
+                            <div class="box"><img src="../../src/utils/images/helP2.jpg"><br /><button type="button" class="open-modal" data-open="modal32">Aliento de Niño</button></div>   
+                            <div class="box"><img src="../../src/utils/images/helP3.jpg"><br /><button type="button" class="open-modal" data-open="modal33">Blue Star</button></div>     
+                            <div class="box"><img src="../../src/utils/images/helP4.jpg"><br /><button type="button" class="open-modal" data-open="modal34">Peine</button></div>         
+                        </div>
+                    </div>
+                </div>
+            </div> <!----------------CLOSE "LIST-CONTAINER"---------------->
+        </div> <!----------------CLOSE "MAIN-CONTAINER"---------------->
+    </div> <!----------------CLOSE "CONTAINER"---------------->
+   <script src="../../src/utils/js/plantas.js"></script>
+   </body>
+</html>

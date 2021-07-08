@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+/* -------------------- Fonts to use -------------------- */
+@font-face {
+    font-family: "Edmondsans"; /*Font for paragraphs*/
+    src: url("../../utils/fonts/EdmondsansRegular.ttf");
+    font-family: "Sunny"; /*Font for titles, subtitles and highlighting words */
+    src: url("../../utils/fonts/SunnyWeather.otf")
+}
+
+body{
+    font-family: "Edmondsans"; 
+}  
+
+/* -------------------- Header styles for the entire website -------------------- */
+.header{
+    width: 100%;
+    background: #856154;
+    display: flex;
+    justify-content: space-between;
+}
+.headerMenu{
+    width: 99,9%;
+    background: #C4C4C4;
+    border:2px solid #A7AA0B;  
+}
+#btn-menu{
+    display: none;
+    padding-left: 1%;
+}
+.headerMenu label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border:2px solid #A7AA0B;  
+}
+.menu ul{
+    margin: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li:hover{
+    background: #A9D18E;    
+}
+.logo img{
+    width: 140px;
+    height: 105px;
+}
+.socialmedia img{
+    width: 60px;
+    height: 60px;
+    padding-top: 20%;
+}
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* -------------------- Home -------------------- */
+.pH{ /*Photo*/
+    height: 100vh;
+    background: url("../../utils/images/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+}
+.pH p{ /*Title text*/
+    color: white;
+    font-size: 150px;
+    font-family: "Sunny";
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 15%;
+}
+.pH h5{ /*Slogan text*/
+    color:white;
+    font-size: 70px;
+    font-family: "Sunny";
+    text-align: right;
+    width: 70%;
+    padding-left: 25%;
+}
+
+
+/* ---------- Website-wide banner styles ---------- */
+.banner{
+    height: 120px;
+    width:100%;
+    background: url("../../utils/images/bannerAS.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid white;
+}
+
+
+/* ---------- Accordion styles ---------- */
+.main-container{ /*Content styles*/
+    width: 100%;
+    text-align: center;
+}
+.btn-item{ /*Content styles*/
+    background: #A9D18E;
+    display:block;
+    color: black;
+    padding: 8px;
+    border-top: 10px solid white;
+}
+.item-content{ /*Accordion options content styles*/
+    background: honeydew;
+    overflow: hidden; /*Content hidden by default*/
+    max-height: 0px;
+    opacity: 0;
+}
+.active + .item-content{
+    max-height: 50%;
+    padding: 10px;
+    opacity: 1; 
+}
+.btn-item.active{
+    background: #548235;
+}
+.btn-item:after{ /*Scroll right icon*/
+    content: '\002b';
+    float: right;
+}
+.btn-item.active:after{ /*Scroll left icon*/
+    content: '\02212';
+    float: right;
+}
+
+
+/* ---------- Responsive design ---------- */
+/*Menu on smartphones/tablets*/
+@media only screen and (max-width:768px){
+    .headerMenu label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #C4C4C4;    
+        width: 70%;
+        margin-left: -80%;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 2px solid #A7AA0B;
+        padding: 2% 1% 1% 2%;
+    }
+    #btn-menu:checked ~ .menu{
+       margin: 0;
+    }
+} 
+
+/*Home*/
+@media only screen and (min-width: 320px) and (max-width:440px){
+    .pH p{ /*Title text*/
+        font-size: 80px;
+        font-family: "Sunny";
+        text-align: center;
+        padding-top: 40%;
+    }
+    .pH h5{ /*Slogan text*/
+        font-size: 30px;
+        text-align: center;
+    }
+} 
+@media only screen and (min-width: 441px) and (max-width:600px){
+    .pH p{ /*Title text*/
+        font-size: 100px;
+        font-family: "Sunny";
+        padding-top: 35%;
+    }
+    .pH h5{ /*Slogan text*/
+        font-size: 40px;
+    }
+} 
+@media only screen and (min-width: 601px) and (max-width:800px){
+    .pH p{ /*Title text*/
+        font-size: 120px;
+        font-family: "Sunny";
+        padding-top: 20%;
+    }
+    .pH h5{ /*Slogan text*/
+        font-size: 60px;
+        width: 65%;
+    }
+} 

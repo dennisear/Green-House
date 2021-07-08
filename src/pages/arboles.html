@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árboles</title>
+    <link rel="stylesheet" type="text/css" href="../../src/utils/css/globalstyles.css">
+    <link rel="stylesheet" type="text/css" href="../../src/utils/css/pya.css">
+    <link rel="shortcut icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../src/utils/images/favicon.ico" type="image/x-icon">
+    <script src="../../src/utils/js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo"> <img src="../../src/utils/images/logo.png"> </div>
+            <div class="socialmedia"> <img src="../../src/utils/images/ig.PNG" onclick="goToIg()"><img src="../../src/utils/images/yb.PNG" onclick="goToYb()"></div>
+        </header>
+        <div class="headerMenu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"> <img src="../../src/utils/images/men.png" class="men"></img>  </label>
+            <nav class="menu">
+                <ul>
+                    <li onclick="changeIndex()"> INICIO</li>
+                    <li onclick="changePlantas()"> PLANTAS</li>
+                    <li onclick="changeArboles()"> ÁRBOLES</li>
+                    <li onclick="changeAsesorias()"> ASESORÍAS</li>
+                    <li onclick="changeQS()"> ¿QUIÉNES SOMOS?</li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="menuPYA">
+            <ul>
+                <li class='option'> Pinos</li>
+                <li class='option'> Palmas</li>
+                <li class='option'> Nativos</li>
+                <li class='option'> Introducidos</li>
+            </ul>
+        </nav>
+
+        <div class="banner"></div>
+
+        <div class="main-container">
+            <div class="list-container">
+                <div class="item">
+                    <!----------------ACCORDION FIRST OPTION---------------->
+                    <p class="btn-item">PINOS</p>
+                    <div class="item-content">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/pinP1.jpg"><br /><button type="button" class="open-modal" data-open="modal1">Bálsamo</button></div>
+                            <div class="box"><img src="../../src/utils/images/pinP2.jpg"><br /><button type="button" class="open-modal" data-open="modal2">Pinabete</button></div>
+                            <div class="box"><img src="../../src/utils/images/pinP3.jpg"><br /><button type="button" class="open-modal" data-open="modal3">Pino</button></div>
+                            <div class="box"><img src="../../src/utils/images/pinP4.jpg"><br /><button type="button" class="open-modal" data-open="modal4">Ciprés</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!----------------ACCORDION SECOND OPTION---------------->
+                    <p class="btn-item">PALMAS</p>
+                    <div class="item-content" id="palmas">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/palP1.jpg"><br /><button type="button" class="open-modal" data-open="modal5">Coquillo</button></div>
+                            <div class="box"><img src="../../src/utils/images/palP2.jpg"><br /><button type="button" class="open-modal" data-open="modal6">Manaca</button></div>
+                            <div class="box"><img src="../../src/utils/images/palP3.jpg"><br /><button type="button" class="open-modal" data-open="modal7">Chontaduro</button></div>
+                            <div class="box"><img src="../../src/utils/images/palP4.jpg"><br /><button type="button" class="open-modal" data-open="modal8">Palma amarga</button></div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!----------------ACCORDION THIRD OPTION---------------->
+                    <p class="btn-item">NATIVOS</p>
+                    <div class="item-content" id="nativos">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/natP1.jpg"><br /><button type="button" class="open-modal" data-open="modal9">Sauce</button></div>
+                            <div class="box"><img src="../../src/utils/images/natP2.jpg"><br /><button type="button" class="open-modal" data-open="modal10">Caucho sabanero</button></div>
+                            <div class="box"><img src="../../src/utils/images/natP3.jpg"><br /><button type="button" class="open-modal" data-open="modal11">Chicalá</button></div>
+                            <div class="box"><img src="../../src/utils/images/natP4.jpg"><br /><button type="button" class="open-modal" data-open="modal12">Borrachero</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!----------------ACCORDION FOURTH OPTION---------------->
+                    <p class="btn-item">INTRODUCIDOS</p>
+                    <div class="item-content" id="introducidos">
+                        <div class="boxes">
+                            <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal13">Palma aceitera</button></div>
+                            <div class="box"><img src="../../src/utils/images/intP2.jpg"><br /><button type="button" class="open-modal" data-open="modal14">Eucalipto</button></div>
+                            <div class="box"><img src="../../src/utils/images/intP4.jpg"><br /><button type="button" class="open-modal" data-open="modal15">Jengibre</button></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> <!----------------CLOSE "LIST-CONTAINER"---------------->
+        </div> <!----------------CLOSE "MAIN-CONTAINER"---------------->
+    </div> <!----------------CLOSE "CONTAINER"---------------->
+    <script src="../../src/utils/js/pya.js"></script>
+</body>
+</html>

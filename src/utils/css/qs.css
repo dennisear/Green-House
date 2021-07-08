@@ -1,0 +1,46 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+    font-family:Edmondsans;
+}
+.objetivos{
+    background-color: #A9D18E;
+    text-align: center;
+    font-size: 120%;
+    color: black;
+    margin-top: 2%;
+    padding-bottom: 4%;
+    padding-top: 3%;
+}
+h2{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.integrantes{
+    border-spacing: 3em .0em;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.integrantes img{
+    margin-top: 5%;
+    border: 8px solid #548235;
+    background-color: black ;
+    border-radius: 50%;
+    height: auto;
+    width: 40%;
+    padding: 2%;
+}
+p{
+    background-color: white;
+    border: 8px solid #548235;
+    padding: 5%;
+    text-align: justify;
+    margin: 7%;
+}
+/*---------------------RESPONSIVE------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width:800px){
+    .contenido{
+        font-size: 80%;
+    }
+} 
