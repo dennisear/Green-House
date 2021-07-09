@@ -29,13 +29,13 @@
                     </ul>
                 </nav>
             </div>
-            <nav class="menuPYA"> <!--BOTONES NOOOO FUNCIONALES AUN-->
+            <nav class="menuPYA">
                 <ul>
-                    <li> Plantas Anuales </li>
-                    <li> Bromelias </li>
-                    <li> Bonsáis </li>
-                    <li> Cáctus y suculentas </li>
-                    <li> Plantas Helechos </li>                
+                    <li id="but1" onclick="anim1()" > Plantas Anuales</li>
+                    <li id="but2" onclick="anim2()" > Bromelias</li>
+                    <li id="but3" onclick="anim3()" > Bonsáis</li>
+                    <li id="but4" onclick="anim4()" > Cáctus y suculentas</li>
+                    <li id="but5" onclick="anim5()" > Plantas Helechos</li>             
                 </ul>
             </nav>
             <div class="banner"></div>
@@ -44,7 +44,7 @@
             <div class="list-container">
                 <div class="item">
                     <!----------------ACCORDION FIRST OPTION---------------->
-                    <p class="btn-item">PLANTAS ANUALES</p>
+                    <p id="pa" class="btn-item" onclick="men(1)">PLANTAS ANUALES</p>
                     <div class="item-content">
                         <div class="slideshow-container"> <!--Contenedor de presentación de diapositivas-->
                             <div class="mySlides">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="item">
                     <!----------------ACCORDION SECOND OPTION---------------->
-                    <p class="btn-item">BROMELIAS</p>
+                    <p id="bro" class="btn-item" onclick="men(2)">BROMELIAS</p>
                     <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/brP1.jpg"><br /><button type="button" class="open-modal" data-open="modal22">Davine</button></div> 
@@ -80,7 +80,7 @@
                 </div>
                 <div class="item">
                     <!----------------ACCORDION THIRD OPTION---------------->
-                    <p class="btn-item">BONSÁIS</p>
+                    <p id="bon" class="btn-item" onclick="men(3)">BONSÁIS</p>
                     <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/bonP1.jpg"><br /><button type="button" class="open-modal" data-open="modal25">Guayacan</button></div> 
@@ -91,7 +91,7 @@
                 </div>
                 <div class="item">
                     <!----------------ACCORDION FOURTH OPTION---------------->
-                    <p class="btn-item">CÁCTUS Y SUCULENTAS</p>
+                    <p id="cs" class="btn-item" onclick="men(4)">CÁCTUS Y SUCULENTAS</p>
                     <div class="item-content">
                         <div class="boxes">
                                 <div class="box"><img src="../../src/utils/images/cacP1.jpg"><br /><button type="button" class="open-modal" data-open="modal28">Blue</button></div>   
@@ -102,7 +102,7 @@
                 </div>
                 <div class="item">
                     <!----------------ACCORDION FIFTH OPTION---------------->
-                    <p class="btn-item">PLANTAS HELECHOS</p>
+                    <p id="phel" class="btn-item" onclick="men(5)">PLANTAS HELECHOS</p>
                     <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/helP1.jpg"><br /><button type="button" class="open-modal" data-open="modal31">Espárrago</button></div>   
