@@ -1,23 +1,51 @@
 //------------------------------------ACCORDION------------------------------------
-let btnItems = document.querySelectorAll(".item .btn-item") //Select accordion elements
 
-for (let i = 0; i < btnItems.length; i++) {  //Loops through the elements
-  btnItems[i].addEventListener("click", function (e) {
-    let btn = e.target; //Variable in which the element that was clicked is saved
-    if (btn.className == "btn-item active") { //Button active class
-      removeClase() // The content is hidden
-    } else {
-      removeClase() 
-      btn.classList.add("active")
-    }
-  })
-}
-function removeClase() { //Show an option and hide the previously selected option
-  for (let i = 0; i < btnItems.length; i++) {  //Loops through the elements
-    btnItems[i].classList.remove("active") 
-
+function menu(content){
+  switch (content) {
+    case 1: 
+     let contenido1 = document.getElementById("pinos")
+     contenido1.classList.toggle("active")
+      break;
+    case 2: 
+      let contenido2 = document.getElementById("palmas") 
+      contenido2.classList.add("active")
+      break;
+    case 3: 
+      let contenido3 = document.getElementById("nativos") 
+      contenido3.classList.toggle("active")
+      break;
+    case 4: 
+      let contenido4 = document.getElementById("introducidos") 
+      contenido4.classList.toggle("active")
+      break;
   }
 }
+
+function animar1(){
+  document.getElementById("pinos").classList.toggle("active")
+  document.getElementById("boton1").onclick = function (){
+    animar1();
+  }
+}
+function animar2(){
+  document.getElementById("palmas").classList.toggle("active")
+  document.getElementById("boton2").onclick = function (){
+    animar2();
+  }
+}
+function animar3(){
+  document.getElementById("nativos").classList.toggle("active")
+  document.getElementById("boton3").onclick = function (){
+    animar3();
+  }
+}
+function animar4(){
+  document.getElementById("introducidos").classList.toggle("active")
+  document.getElementById("boton4").onclick = function (){
+    animar4();
+  }
+}
+
 
 //------------------------------------ CONTENT OF MODALS -----------------------------------
 function modals(id, title, first, second, third, description, habitat, price){ //Function that displays the template of the modals

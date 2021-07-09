@@ -1,23 +1,60 @@
 //------------------------------------ACCORDION------------------------------------
-let btnItems = document.querySelectorAll(".item .btn-item") //Select accordion elements
-
-for (let i = 0; i < btnItems.length; i++) {  //Loops through the elements
-  btnItems[i].addEventListener("click", function (e) {
-    let btn = e.target; //Variable in which the element that was clicked is saved
-    if (btn.className == "btn-item active") { //Button active class
-      removeClase() // The content is hidden
-    } else {
-      removeClase() 
-      btn.classList.add("active")
-    }
-  })
-}
-function removeClase() { //Show an option and hide the previously selected option
-  for (let i = 0; i < btnItems.length; i++) {  //Loops through the elements
-    btnItems[i].classList.remove("active") 
-
+function men(content){
+  switch (content) {
+    case 1: 
+      let content1 = document.getElementById("pa")
+      content1.classList.toggle("active")
+      break;
+    case 2: 
+      let content2 = document.getElementById("bro") 
+      content2.classList.add("active")
+      break;
+    case 3: 
+      let content3 = document.getElementById("bon") 
+      content3.classList.toggle("active")
+      break;
+    case 4: 
+      let content4 = document.getElementById("cs") 
+      content4.classList.toggle("active")
+      break;
+    case 5: 
+      let content5 = document.getElementById("phel") 
+      content5.classList.toggle("active")
+      break;
   }
 }
+
+function anim1(){
+  document.getElementById("pa").classList.toggle("active")
+  document.getElementById("but1").onclick = function (){
+    anim1();
+  }
+}
+function anim2(){
+  document.getElementById("bro").classList.toggle("active")
+  document.getElementById("but2").onclick = function (){
+    anim2();
+  }
+}
+function anim3(){
+  document.getElementById("bon").classList.toggle("active")
+  document.getElementById("but3").onclick = function (){
+    anim3();
+  }
+}
+function anim4(){
+  document.getElementById("cs").classList.toggle("active")
+  document.getElementById("but4").onclick = function (){
+    anim4();
+  }
+}
+function anim5(){
+  document.getElementById("phel").classList.toggle("active")
+  document.getElementById("but5").onclick = function (){
+    anim4();
+  }
+}
+
 
 //------------------------------------ SLIDER PAGE: PLANTAS------------------------------------
 let slideIndex = 1;

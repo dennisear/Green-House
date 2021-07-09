@@ -29,10 +29,10 @@
         </div>
         <nav class="menuPYA">
             <ul>
-                <li class='option'> Pinos</li>
-                <li class='option'> Palmas</li>
-                <li class='option'> Nativos</li>
-                <li class='option'> Introducidos</li>
+                <li id="boton1" onclick="animar1()" > Pinos</li>
+                <li id="boton2" onclick="animar2()"> Palmas</li>
+                <li id="boton3" onclick="animar3()"> Nativos</li>
+                <li id="boton4" onclick="animar4()"> Introducidos</li>
             </ul>
         </nav>
 
@@ -42,7 +42,7 @@
             <div class="list-container">
                 <div class="item">
                     <!----------------ACCORDION FIRST OPTION---------------->
-                    <p class="btn-item">PINOS</p>
+                    <p id="pinos" class="btn-item" onclick="menu(1)">PINOS</p>
                     <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/pinP1.jpg"><br /><button type="button" class="open-modal" data-open="modal1">Bálsamo</button></div>
@@ -55,8 +55,8 @@
 
                 <div class="item">
                     <!----------------ACCORDION SECOND OPTION---------------->
-                    <p class="btn-item">PALMAS</p>
-                    <div class="item-content" id="palmas">
+                    <p id="palmas" class="btn-item" onclick="menu(2)">PALMAS</p>
+                    <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/palP1.jpg"><br /><button type="button" class="open-modal" data-open="modal5">Coquillo</button></div>
                             <div class="box"><img src="../../src/utils/images/palP2.jpg"><br /><button type="button" class="open-modal" data-open="modal6">Manaca</button></div>
@@ -68,8 +68,8 @@
 
                 <div class="item">
                     <!----------------ACCORDION THIRD OPTION---------------->
-                    <p class="btn-item">NATIVOS</p>
-                    <div class="item-content" id="nativos">
+                    <p id="nativos" class="btn-item" onclick="menu(3)">NATIVOS</p>
+                    <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/natP1.jpg"><br /><button type="button" class="open-modal" data-open="modal9">Sauce</button></div>
                             <div class="box"><img src="../../src/utils/images/natP2.jpg"><br /><button type="button" class="open-modal" data-open="modal10">Caucho sabanero</button></div>
@@ -81,8 +81,8 @@
 
                 <div class="item">
                     <!----------------ACCORDION FOURTH OPTION---------------->
-                    <p class="btn-item">INTRODUCIDOS</p>
-                    <div class="item-content" id="introducidos">
+                    <p id="introducidos" class="btn-item" onclick="menu(4)">INTRODUCIDOS</p>
+                    <div class="item-content">
                         <div class="boxes">
                             <div class="box"><img src="../../src/utils/images/intP1.jpg"><br /><button type="button" class="open-modal" data-open="modal13">Palma aceitera</button></div>
                             <div class="box"><img src="../../src/utils/images/intP2.jpg"><br /><button type="button" class="open-modal" data-open="modal14">Eucalipto</button></div>
