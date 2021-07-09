@@ -294,7 +294,7 @@ background: url(../images/pinG1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-#slide97, #slide98, #slide90{
+#slide97, #slide98, #slide99{
   background: url(../images/helG3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,7 +350,8 @@ background: url(../images/pinG1.jpg);
   color: #548235;
 }
 .s1, .s2, .s3{
-  background: rgba(169, 209, 142, 0.7);
+  background: rgba(169, 209, 142, 0.6);
+  color: black;
 }
 .s1{
   width: 40%;

@@ -73,34 +73,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
 }
 
-//------------------------------------MODAL OPERATION-----------------------------------
-
-const openEls = document.querySelectorAll("[data-open]"); //Constant to open the modal
-const closeEls = document.querySelectorAll("[data-close]"); //Constant to close the modal
-const isVisible = "is-visible";
-
-for (const el of openEls) { //Constant to make the modal visible
-  el.addEventListener("click", function() {
-    const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add(isVisible);
-  });
-}
-for (const el of closeEls) { //Constant to close the modal when the required button is clicked
-  el.addEventListener("click", function() {
-    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-  });
-}
-document.addEventListener("click", e => { //Close the modal when clicking outside of it
-  if (e.target == document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-  }
-});
-document.addEventListener("keyup", e => { //Close the modal when the ESC key is pressed
-  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-  }
-});
-
 //------------------------------------ CONTENT OF MODALS -----------------------------------
 function modals(id, title, first, second, third, description, habitat, price){ //Function that displays the template of the modals
   return `
@@ -175,3 +147,31 @@ modal = modals('33', 'ALIENTO DE NIÑO', '97', '98', '99', 'Es un helecho de asp
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
 modal = modals('34', 'PEINE', '100', '101', '102', 'No tolera ambientes secos ni calurosos. Necesita alta humedad en todo momento. No regar sobre las hojas, sino directo a la tierra o la base de la planta. Ideal para interiores. Proteger en exterior.', 'Por lo general, los helechos crecen en selvas lluviosas tropicales. También pueden hallarse en otros lugares cálidos y húmedos en los que hay abundante sombra. Muy pocas especies de helecho crecen en regiones frías y áridas.', 'Su precio apróximado es COP15,000')
 document.querySelector('.list-container').insertAdjacentHTML('afterend', modal)
+
+//------------------------------------MODAL OPERATION-----------------------------------
+
+const openEls = document.querySelectorAll("[data-open]"); //Constant to open the modal
+const closeEls = document.querySelectorAll("[data-close]"); //Constant to close the modal
+const isVisible = "is-visible";
+
+for (const el of openEls) { //Constant to make the modal visible
+  el.addEventListener("click", function() {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+for (const el of closeEls) { //Constant to close the modal when the required button is clicked
+  el.addEventListener("click", function() {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+document.addEventListener("click", e => { //Close the modal when clicking outside of it
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+document.addEventListener("keyup", e => { //Close the modal when the ESC key is pressed
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
