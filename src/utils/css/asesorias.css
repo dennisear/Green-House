@@ -1,10 +1,19 @@
-
+.item-content{
+    display: flex;
+}
+.text{
+    margin: 10% 1%;
+    width: 45%;
+    text-align: justify;
+}
 .containerCard{
     width: 100%;
     display: flex;
     max-width: 100%;
 }
-
+iframe{
+    border: 8px dotted #A9D18E; 
+}
 .card{
     width: 100%;
     margin: 20px;
