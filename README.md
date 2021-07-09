@@ -12,7 +12,7 @@
 	<li>JavaScript</li>
 	<li>React</li>
 </ul>
-
+<h2>Procedimiento</h2>
 <p>En caso de querer copiar o clonar este proyecto, se recomienda utilizar los siguientes links:</p>
 <h3>HTTPS:</h3>
 <li>https://github.com/dennisear/Green-House.git</p></li>
